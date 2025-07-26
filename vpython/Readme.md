@@ -47,9 +47,24 @@ dwarf.pos = dwarf.pos + (dwarf.p/dwarf.mass) * dt
 
 ### Conceptos físicos involucrados
 
-- **Momento lineal (\( \vec{p} \)):** Unidades de kg·m/s.
-- **Segunda ley de Newton:** \( \vec{F} = \frac{d\vec{p}}{dt} \).
-- **Ley de gravitación universal:** \( \vec{F} = G \frac{m_1 m_2}{r^2} \hat{r} \).
+- **Momento lineal**
+  $$
+  \vec{p}
+  $$
+  Unidades de kg·m/s.
+
+- **Segunda ley de Newton:** 
+  $$
+  \vec{F}=\frac{d\vec{p}}{dt}
+  $$
+  
+
+- **Ley de gravitación universal**
+  $$
+  \vec{F} = G \frac{m_1 m_2}{r^2} \hat{r}
+  $$
+  
+
 - **Integración numérica (Euler):** Aproximación para actualizar variables físicas en pasos discretos de tiempo.
 
 ### Posibles extensiones

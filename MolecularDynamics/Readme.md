@@ -1,12 +1,10 @@
 
-## MolecularDynamics
+## Molecular Dynamics
 
-Repositorio de ejemplos y materiales para simulación de **dinámica molecular** como parte del curso de Métodos Computacionales.
+Repositorio de ejemplos y materiales enmarcados en **dinámica molecular** como parte de un curso de Métodos Computacionales.
 
-### Autor y Contexto
+### Contexto
 
-- **Autor:** Nicolás Torres (Nickware)
-- **Ubicación:** Bogotá, Colombia
 - **Propósito:** Curso introductorio a métodos computacionales, con aplicaciones en física y modelado molecular.
 
 ### ¿Qué es la dinámica molecular?
