@@ -10,15 +10,13 @@ El guion crea dos esferas llamadas **giant** y **dwarf**, con diferentes masas, 
 
 - La constante **G**, $$6.7 \times 10^{-11}$$, es la **constante de gravitación universal**.
 - Se definen las posiciones, velocidades y masas iniciales:
-  - giant: posición $$(-1 \times 10^{11}, 0, 0)$$, masa $$2 \times 10^{30}$$, velocidad $$(0, 0, -1 \times 10^4)$$.
-  - dwarf: posición $$(1.5 \times 10^{11}, 0, 0)$$, masa $$1 \times 10^{30}$$, velocidad calculada para conservar el momento lineal total.
+  - giant: posición $(-1 \times 10^{11}, 0, 0)$, masa $2 \times 10^{30}$, velocidad $(0, 0, -1 \times 10^4)$.
+  - dwarf: posición $(1.5 \times 10^{11}, 0, 0)$, masa $1 \times 10^{30}$, velocidad calculada para conservar el momento lineal total.
 
 ## Cálculo de la Fuerza Gravitacional
 
 - Se usa la función **gravitational_force** para calcular la fuerza gravitacional entre ambos cuerpos, usando la ley de Newton:
-  $$
-  \vec{F} = G \frac{m_1 m_2}{|\vec{r}|^2} \hat{r}
-  $$
+  $\vec{F} = G \frac{m_1 m_2}{|\vec{r}|^2} \hat{r}$
   donde $$\vec{r}$$ es el vector que une ambos cuerpos.
 
 ## Integración Leapfrog
