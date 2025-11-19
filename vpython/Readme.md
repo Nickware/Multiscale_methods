@@ -19,7 +19,7 @@ El código implementa un modelo simple de dos cuerpos (un "gigante" y un "enano"
    - Se ajusta la vista de la escena 3D para una mejor visualización.
 
 2. **Definición de constantes físicas:**
-   - Constante gravitacional \( G \).
+   - Constante gravitacional $\( G \$).
 
 3. **Creación de los objetos:**
    - Dos esferas (`giant` y `dwarf`) con posiciones, radios, colores y trayectorias personalizadas.
@@ -48,20 +48,14 @@ dwarf.pos = dwarf.pos + (dwarf.p/dwarf.mass) * dt
 ### Conceptos físicos involucrados
 
 - **Momento lineal**
-  $$
-  \vec{p}
-  $$
+  $\vec{p}$
   Unidades de kg·m/s.
 
 - **Segunda ley de Newton:** 
-  $$
-  \vec{F}=\frac{d\vec{p}}{dt}
-  $$
+  $\vec{F}=\frac{d\vec{p}}{dt}$
   
 - **Ley de gravitación universal**
-  $$
-  \vec{F} = G \frac{m_1 m_2}{r^2} \hat{r}
-  $$
+  $\vec{F} = G \frac{m_1 m_2}{r^2} \hat{r}$
   
 - **Integración numérica (Euler):** Aproximación para actualizar variables físicas en pasos discretos de tiempo.
 
