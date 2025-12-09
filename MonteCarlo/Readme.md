@@ -45,6 +45,23 @@ El workflow estándar del método Monte Carlo sigue un ciclo iterativo para apro
 - Contar proporción $k/N$ dentro del círculo ($x^2 + y^2 \leq 1$).
 - Estimar $\pi \approx 4 k / N$.[wikipedia](https://es.wikipedia.org/wiki/Método_de_Montecarlo)
 
+### Compilación y Ejecución
+
+```bash
+g++ -O3 -std=c++11 -o monte_carlo_pi monte_carlo_pi.cpp -lm
+./monte_carlo_pi
+```
+### Visualización con xmgrace
+
+```bash
+xmgrace -nxy inside.dat outside.dat -param plot.xmgr
+```
+
+### Resultados Esperados
+
+Con $N=10^6$, obtendrás $\pi \approx 3.1415 \pm 0.0018$ (error ~0.06%). Los puntos rojos forman el círculo unitario, azules el cuadrado exterior. Escalable a GPU con Thrust/CUDA para $N>10^9$ en simulaciones moleculares.[wikipedia+1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+
 Este workflow se adapta directamente a variantes: en MCMC agrega propuestas Metropolis; en DSMC, pasos de movimiento/colisión; en GCMC, inserciones/eliminaciones. En simulaciones moleculares, se usa regularmente para promediar energías o propiedades en ensembles.[scm+1](https://www.scm.com/doc/AMS/Tasks/GCMC.html)
 
 1. [https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo](https://es.wikipedia.org/wiki/Método_de_Montecarlo)

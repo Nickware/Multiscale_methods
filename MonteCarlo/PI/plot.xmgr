@@ -1,0 +1,20 @@
+# Configuración para Monte Carlo π
+PAGE LABEL "Estimación de π con Monte Carlo"
+FOCUS
+ARRANGE
+READ XY "inside.dat"
+READ XY "outside.dat"
+s0 symbol 1
+s0 SYMBOL FILL ON
+s0 SYMBOL COLOR 1
+s1 symbol 1
+s1 SYMBOL FILL ON
+s1 SYMBOL COLOR 4
+world xmin -1.1
+world xmax 1.1
+world ymin -1.1
+world ymax 1.1
+xaxis label "x"
+yaxis label "y"
+title "Monte Carlo: Estimacion de Pi"
+REDRAW
