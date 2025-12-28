@@ -18,7 +18,7 @@ Estas mejoran eficiencia, convergencia o adaptabilidad:
 - **Monte Carlo Simple**: Promedia simulaciones independientes para valores esperados, como estimar $\pi$ inscribiendo un círculo en un cuadrado y contando proporciones de puntos aleatorios dentro.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - **Quasi-Monte Carlo**: Emplea secuencias deterministas de baja discrepancia (ej. Halton, Sobol) para muestreo uniforme superior al aleatorio puro, convergiendo como $O((\log N)^d / N)$ en $d$ dimensiones.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - **Monte Carlo de Importancia**: Reescribe integrales como expectativas bajo distribución tilted $q(x)$ que enfatiza regiones de alta contribución, reduciendo varianza: $\mathbb{E}_q [f(x) w(x)]$ con $w(x) = p(x)/q(x)$.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
-- **Markov Chain Monte Carlo (MCMC)**: Explora distribuciones $p(x)$ vía cadenas de Markov ergódicas, con propuestas Metropolis-Hastings (aceptación $\min(1, p(x')/p(x))$) o Gibbs sampling para componentes condicionales; clave en inferencia bayesiana y muestreo de Boltzmann en física estadística.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+- **Markov Chain Monte Carlo (MCMC)**: Explora distribuciones $p(x)$ vía cadenas de Markov ergódicas, con propuestas Metropolis-Hastings -- aceptación -- $(\min(1,p(x')/p(x)))$ o Gibbs sampling para componentes condicionales; clave en inferencia bayesiana y muestreo de Boltzmann en física estadística.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 ## Variantes Especializadas
 
@@ -36,7 +36,7 @@ El workflow estándar del método Monte Carlo sigue un ciclo iterativo para apro
 2. **Generar números pseudoaleatorios**: Usa un generador (ej. Mersenne Twister) para producir secuencias uniformes en [0,1), transformadas a $p(x)$ vía métodos de inversión, rechazo o tablas acumuladas para variables discretas/continuas.[ehu+1](http://www.sc.ehu.es/sbweb/fisica_/numerico/montecarlo/montecarlo.html)
 3. **Ejecutar simulaciones independientes**: Para cada muestra $i = 1$ a $N$ (miles/millones), dibuja $x_i \sim p(x)$, calcula $y_i = f(x_i)$ y almacena resultados; opcionalmente computa pesos para variantes como importancia sampling.[asana](https://asana.com/es/resources/montecarlo-method)
 4. **Calcular estadísticos**: Estima el valor esperado $\hat{\mu} = \frac{1}{N} \sum y_i$, varianza $\hat{\sigma}^2 = \frac{1}{N-1} \sum (y_i - \hat{\mu})^2$ y intervalos de confianza (ej. $\hat{\mu} \pm 1.96 \hat{\sigma}/\sqrt{N}$ al 95%).[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
-5. **Evaluar convergencia y refinar**: Monitorea error estadístico ($O(1/\sqrt{N})$); si insuficiente, incrementa $N$ o aplica técnicas de reducción de varianza; visualiza distribuciones (histogramas) para validar.[aws.amazon](https://aws.amazon.com/es/what-is/monte-carlo-simulation/)
+5. **Evaluar convergencia y refinar**: Monitorea error estadístico $(O(1/\sqrt{N}))$; si insuficiente, incrementa $N$ o aplica técnicas de reducción de varianza; visualiza distribuciones (histogramas) para validar.[aws.amazon](https://aws.amazon.com/es/what-is/monte-carlo-simulation/)
 
 ## Ejemplo Práctico: Aproximación de $\pi$
 
