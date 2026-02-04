@@ -33,7 +33,7 @@ En dinámica molecular:
 - Verlet y sus variantes son **integradores estándar** para simular la trayectoria de átomos y moléculas con pasos de tiempo del orden de femtosegundos. [authorea](https://www.authorea.com/users/317774/articles/447871-simulaci%C3%B3n-molecular)
 - Su buena conservación de la energía y su bajo costo computacional lo hacen adecuado para simulaciones largas de proteínas, líquidos, sólidos, etc. [patents.google](https://patents.google.com/patent/ES2440415A2/es)
 
-Verlet es uno de los métodos de **integración numérica simplécticos** que permiten equilibrar precisión y costo computacional, manteniendo la estabilidad energética necesaria en simulaciones de dinámica molecular.
+Verlet es uno de los métodos de **integración numérica simpléctica** que permiten equilibrar precisión y costo computacional, manteniendo la estabilidad energética necesaria en simulaciones de dinámica molecular.
 
 # Movimiento gravitacional de dos esferas con algoritmo de Verlet
 
