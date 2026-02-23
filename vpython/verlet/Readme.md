@@ -4,19 +4,19 @@ El **método de Verlet** es un integrador numérico de orden 2, muy usado en din
 
 ## Idea general  
 
-En su forma clásica (Störmer–Verlet), el método usa posiciones en tres tiempos: \(x_{n-1}, x_n, x_{n+1}\).  
-- A partir de la posición actual \(x_n\) y la anterior \(x_{n-1}\), y de la aceleración \(a_n = F(x_n)/m\), se calcula la nueva posición \(x_{n+1}\).  
+En su forma clásica (Störmer–Verlet), el método usa posiciones en tres tiempos: $\(x_{n-1}, x_n, x_{n+1}\)$.  
+- A partir de la posición actual $\(x_n\)$ y la anterior $\(x_{n-1}\)$, y de la aceleración $\(a_n = F(x_n)/m\)$, se calcula la nueva posición $\(x_{n+1}\)$.  
 - No usa explícitamente las velocidades en la fórmula principal; estas pueden reconstruirse después si se necesitan. [dynamics.unam](https://www.dynamics.unam.edu/integra/Manual-Tutoriales/Tesis.pdf)
 
 La fórmula típica es:  
-\[
+$\[
 x_{n+1} = x_n + x_n - x_{n-1} + a_n\,\Delta t^2
-\]  
+\]$  
 donde \(\Delta t\) es el paso de tiempo. [fismvaladez.wordpress](https://fismvaladez.wordpress.com/2018/05/19/marco-teorico-metodo-de-velocity-verlet-en-metodos-numericos/)
 
 ## Propiedades importantes  
 
-- Es un integrador **explícito** y de **orden 2** (el error global escala como \(\Delta t^2\)). [dynamics.unam](https://www.dynamics.unam.edu/integra/Manual-Tutoriales/Tesis.pdf)
+- Es un integrador **explícito** y de **orden 2** (el error global escala como $\(\Delta t^2\))$. [dynamics.unam](https://www.dynamics.unam.edu/integra/Manual-Tutoriales/Tesis.pdf)
 - Es **simpléctico** y **simétrico en el tiempo**, lo que significa que preserva bien la estructura Hamiltoniana del sistema y mantiene la energía total con oscilaciones acotadas en lugar de una deriva sistemática. [uvadoc.uva](https://uvadoc.uva.es/bitstream/handle/10324/71194/TFG-G6848.pdf?sequence=1&isAllowed=y)
 - Solo requiere **una evaluación de fuerzas por paso**, a diferencia de métodos de orden similar como Runge–Kutta de orden 2, que suelen necesitar varias evaluaciones, por lo que resulta muy eficiente en dinámica molecular. [patents.google](https://patents.google.com/patent/ES2440415A2/es)
 
@@ -53,9 +53,7 @@ El código define dos esferas: **giant** (gigante) y **dwarf** (enano), con prop
 ## Cálculo de la Fuerza Gravitacional
 
 - La función **gravitational_force()** calcula la fuerza entre ambos cuerpos usando la ley de Newton:
-  $$
-  \vec{F} = G \frac{m_1 m_2}{|\vec{r}|^2} \hat{r}
-  $$
+  $\vec{F} = G \frac{m_1 m_2}{|\vec{r}|^2} \hat{r}$
   donde $$\vec{r}$$ es el vector de separación entre los dos objetos.
 
 ## Integración Tipo Verlet
