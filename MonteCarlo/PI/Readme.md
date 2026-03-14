@@ -70,7 +70,7 @@ Esto abrirá xmgrace con dos conjuntos de datos:
 - `S0`: puntos dentro del círculo (`inside.dat`).  
 - `S1`: puntos fuera del círculo (`outside.dat`).  
 
-Dentro de la interfaz de xmgrace, se recomienda:
+Dentro de la interfaz de Xmgrace, se recomienda:
 
 1. Ir a **Plot → Set appearance** (o botón “Set”).  
 2. Seleccionar `S0` y configurar:  
@@ -100,7 +100,7 @@ Con un número grande de puntos \(N\), los puntos rojos llenarán el disco unita
 
 - El programa usa `std::mt19937` inicializado con `std::random_device` para generar números pseudoaleatorios de alta calidad.[1]
 
-- El cálculo del error utiliza una aproximación basada en un intervalo de confianza al 95% asumiendo comportamiento aproximadamente binomial/normal para la proporción de puntos dentro del círculo.
+- El cálculo del error utiliza una aproximación basada en un intervalo de confianza al 95% asumiendo un comportamiento aproximadamente binomial/normal para la proporción de puntos dentro del círculo.
 
 ## Estructura del código
 
@@ -110,7 +110,7 @@ Bloques principales:
    - Definir `N`, generador Mersenne Twister y distribución uniforme en 2D.  
 
 2. **Bucle de muestreo**  
-   - Generar puntos, los clasifica como dentro/fuera del círculo, acumula contadores y almacena coordenadas.  
+   - Generar puntos: los clasifica como dentro/fuera del círculo, acumula contadores y almacena coordenadas.  
 
 3. **Cálculo de estadísticos**  
    - Estimación de $\(\pi\)$.  
@@ -124,4 +124,4 @@ Bloques principales:
 
 Este ejemplo sirve como plantilla básica para otros experimentos de Monte Carlo: basta con cambiar la región de aceptación (la condición `x*x + y*y <= 1.0`) y la función de interés para adaptarlo a nuevas integrales o problemas probabilísticos.[1]
 
-[1](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo)
+[1]. [https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo](https://es.wikipedia.org/wiki/Método_de_Montecarlo)
