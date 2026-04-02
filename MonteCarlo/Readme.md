@@ -1,6 +1,6 @@
 # Método Monte Carlo
 
-El método Monte Carlo es una técnica computacional que utiliza muestreo aleatorio repetido para aproximar soluciones numéricas a problemas determinísticos o estocásticos complejos, como integrales multidimensionales, optimización y modelado de sistemas con incertidumbre. Basado en la ley de los grandes números, genera entradas aleatorias en un dominio definido, evalúa funciones deterministas y promedia resultados para estimar expectativas matemáticas, con precisión que mejora como $1/\sqrt{N}$ donde $N$ es el número de muestras. Originado en los años 1940 para física nuclear (difusión de neutrones), se aplica en finanzas, física molecular, ingeniería y machine learning, superando métodos analíticos en alta dimensionalidad.[wikipedia+1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+El método Monte Carlo es una técnica computacional que utiliza muestreo aleatorio repetido para aproximar soluciones numéricas a problemas determinísticos o estocásticos complejos, como integrales multidimensionales, optimización y modelado de sistemas con incertidumbre. Basado en la ley de los grandes números, genera entradas aleatorias en un dominio definido, evalúa funciones deterministas y promedia resultados para estimar expectativas matemáticas, con precisión que mejora como $1/\sqrt{N}$ donde $N$ es el número de muestras. Originado en los años 1940 para física nuclear (difusión de neutrones), se aplica en finanzas, física ar, ingeniería y machine learning, superando métodos analíticos en alta dimensionalidad.[wikipedia+1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 ## Mecánica Básica
 
@@ -9,7 +9,7 @@ El algoritmo sigue pasos estándar:
 1. definir variables aleatorias con distribución de probabilidad adecuada; 
 2. Generar muestras independientes (o correlacionadas en variantes); 
 3. Calcular observables; 
-4. Estimar medias y varianzas vía promedios empíricos. Para reducir el error estadístico, se usan técnicas de varianza reducida. En física computacional, relevante para tu trabajo en dinámica molecular, modela ensembles termodinámicos y propiedades macroscópicas.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+4. Estimar medias y varianzas vía promedios empíricos. Para reducir el error estadístico, se usan técnicas de varianza reducida. En física computacional, relevante para tu trabajo en dinámica ar, modela ensembles termodinámicos y propiedades macroscópicas.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 ## Variantes Principales
 
@@ -26,7 +26,7 @@ Estas mejoran eficiencia, convergencia o adaptabilidad:
 - **Monte Carlo Tree Search (MCTS)**: Árbol de búsqueda expandido por simulaciones aleatorias (rollouts), balanceando exploración/explotación vía UCT; base de AlphaGo para juegos y optimización secuencial.[wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - **Grand Canonical Monte Carlo (GCMC)**: Para ensemble $(\mu, V, T)$, alterna desplazamientos de Metropolis con inserciones/eliminaciones de partículas, aceptadas por $\exp(-\beta \Delta U \pm \beta \mu)$; ideal para adsorción en nanoporos y termodinámica de materiales.[scm](https://www.scm.com/doc/AMS/Tasks/GCMC.html)
 
-Otras incluyen Monte Carlo en finanzas (valoración de opciones), kinetic Monte Carlo para procesos raros y híbridos con dinámica molecular. En simulaciones moleculares como las tuyas, se combinan con MD para ensembles híbridos, ofreciendo flexibilidad en sistemas abiertos.[pubs.acs+1](https://pubs.acs.org/doi/10.1021/jp908058n)
+Otras incluyen Monte Carlo en finanzas (valoración de opciones), kinetic Monte Carlo para procesos raros y híbridos con dinámica molecular. En simulaciones moleculares, se combinan con MD para ensembles híbridos, ofreciendo flexibilidad en sistemas abiertos.[pubs.acs+1](https://pubs.acs.org/doi/10.1021/jp908058n)
 
 ## Workflow del Método Monte Carlo Básico
 
@@ -59,10 +59,12 @@ xmgrace -nxy inside.dat outside.dat -param plot.xmgr
 
 ### Resultados Esperados
 
-Con $N=10^6$, obtendrás $\pi \approx 3.1415 \pm 0.0018$ (error ~0.06%). Los puntos rojos forman el círculo unitario, azules el cuadrado exterior. Escalable a GPU con Thrust/CUDA para $N>10^9$ en simulaciones moleculares.[wikipedia+1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+Con $N=10^6$, se obtendrá $\pi \approx 3.1415 \pm 0.0018$ (error ~0.06%). Los puntos rojos forman el círculo unitario, azules el cuadrado exterior. Escalable a GPU con Thrust/CUDA para $N>10^9$ en simulaciones ares.[wikipedia+1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 
-Este workflow se adapta directamente a variantes: en MCMC agrega propuestas de Metropolis; en DSMC, pasos de movimiento/colisión; en GCMC, inserciones/eliminaciones. En simulaciones moleculares, se usa regularmente para promediar energías o propiedades en ensembles.[scm+1](https://www.scm.com/doc/AMS/Tasks/GCMC.html)
+Este workflow se adapta directamente a variantes: en MCMC agrega propuestas de Metropolis; en DSMC, pasos de movimiento/colisión; en GCMC, inserciones/eliminaciones. 
+
+En simulaciones ares, se usa regularmente para promediar energías o propiedades en ensembles.[scm+1](https://www.scm.com/doc/AMS/Tasks/GCMC.html)
 
 1. [https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo](https://es.wikipedia.org/wiki/Método_de_Montecarlo)
 2. https://www.ibm.com/es-es/topics/monte-carlo-simulation
