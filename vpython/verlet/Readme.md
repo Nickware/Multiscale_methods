@@ -9,10 +9,7 @@ En su forma clásica (Störmer–Verlet), el método usa posiciones en tres tiem
 - No usa explícitamente las velocidades en la fórmula principal; estas pueden reconstruirse después si se necesitan. [dynamics.unam](https://www.dynamics.unam.edu/integra/Manual-Tutoriales/Tesis.pdf)
 
 La fórmula típica es:  
-$\[
-x_{n+1} = x_n + x_n - x_{n-1} + a_n\,\Delta t^2
-\]$  
-donde \(\Delta t\) es el paso de tiempo. [fismvaladez.wordpress](https://fismvaladez.wordpress.com/2018/05/19/marco-teorico-metodo-de-velocity-verlet-en-metodos-numericos/)
+$\[x_{n+1} = x_n + x_n - x_{n-1} + a_n\,\Delta t^2\]$ donde \$(\Delta t\)$ es el paso de tiempo. [fismvaladez.wordpress](https://fismvaladez.wordpress.com/2018/05/19/marco-teorico-metodo-de-velocity-verlet-en-metodos-numericos/)
 
 ## Propiedades importantes  
 
@@ -69,7 +66,5 @@ El código define dos esferas: **giant** (gigante) y **dwarf** (enano), con prop
 
 - Usar el momento tiene ventajas respecto a la conservación de la cantidad de movimiento, crucial en sistemas cerrados y en problemas de física clásica.
 - El script facilita la **visualización** de trayectorias y permite explorar conceptos como conservación de momento y energía en interacciones gravitacionales.
-
-***
 
 Esta simulación es adecuada para ilustrar la **dinámica de dos cuerpos bajo gravedad**, mostrando cómo evolucionan sus posiciones y momentos en el tiempo usando un método numéricamente estable.
