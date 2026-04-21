@@ -79,6 +79,4 @@ El guion crea dos esferas llamadas **giant** y **dwarf**, con diferentes masas, 
 - Este tipo de simulaciones es fundamental para **entender órbitas**, colisiones y dinámica de sistemas gravitacionales en física o astronomía.
 - El script puede modificarse para más cuerpos o diferentes parámetros físicos.
 
-***
-
-La simulación es una herramienta didáctica eficaz para visualizar interacciones gravitacionales y el uso de algoritmos de integración avanzados como **Leapfrog**.
+La simulación es una herramienta didáctica eficaz para visualizar interacciones gravitacionales y el uso de algoritmos de integración avanzados como Leapfrog.
