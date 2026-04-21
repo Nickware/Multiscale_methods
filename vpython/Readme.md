@@ -75,6 +75,4 @@ dwarf.pos = dwarf.pos + (dwarf.p/dwarf.mass) * dt
 
 Guardar el script en un archivo `.py` y ejecútarlo. Se abrirá una ventana interactiva mostrando la simulación en 3D.
 
----
-
-**Este script es ideal para fines educativos**, permitiendo experimentar y visualizar conceptos fundamentales de la dinámica gravitacional y la programación científica con Python.
+Este script es ideal para fines educativos, permitiendo experimentar y visualizar conceptos fundamentales de la dinámica gravitacional y la programación científica con Python.
