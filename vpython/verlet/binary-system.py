@@ -1,3 +1,16 @@
+# Simulación de un sistema binario de dos objetos que se orbitan mutuamente
+# En este caso, el objeto gigante es una estrella y el objeto enano es un planeta.
+# El sistema se encuentra aislado, es decir, no hay fuerzas externas actuando sobre el sistema.
+# El código simula el movimiento de ambos objetos utilizando la ley de gravitación universal de Newton.
+# Para ejecutar este código, es necesario tener instalado el módulo vpython, que se puede instalar utilizando pip:
+# pip install vpython
+# El código utiliza un bucle infinito para actualizar la posición de ambos objetos en cada iteración, calculando la fuerza gravitacional entre ellos y actualizando su momento lineal y posición en consecuencia. La simulación se visualiza utilizando esferas para representar los objetos y trayectorias para mostrar su movimiento a lo largo del tiempo.
+# El código también incluye comentarios que plantean preguntas sobre las unidades físicas de las variables y a qué ecuaciones de cinemática se parecen las ecuaciones utilizadas para actualizar la posición de los objetos. Estas preguntas pueden ser útiles para comprender mejor la física detrás de la simulación y cómo se relaciona con las leyes del movimiento de Newton.
+# Nota: Este código es una simplificación de un sistema binario real y no tiene en cuenta factores como la resistencia del aire, la radiación o la relatividad. Sin embargo, proporciona una buena aproximación para entender los conceptos básicos de la gravitación y el movimiento orbital.
+# Para mejorar la simulación, se podrían agregar características como la posibilidad de ajustar las masas y posiciones iniciales de los objetos, o incluir efectos adicionales como la radiación o la resistencia del aire. También se podrían implementar diferentes tipos de trayectorias para mostrar cómo varían las órbitas en función de las condiciones iniciales.
+# Además, se podrían agregar controles para pausar o reiniciar la simulación, o para mostrar información adicional sobre las fuerzas y velocidades de los objetos en tiempo real. Estas mejoras podrían hacer que la simulación sea más interactiva y educativa para los usuarios interesados en aprender sobre la física de los sistemas binarios.
+# En resumen, este código proporciona una base para simular un sistema binario de dos objetos utilizando la ley de gravitación universal de Newton, y se pueden realizar mejoras adicionales para hacer la simulación más completa e interactiva.
+
 from vpython import *
 
 scene.caption = ""
