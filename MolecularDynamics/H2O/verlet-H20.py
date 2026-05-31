@@ -1,3 +1,18 @@
+# Simulación de dinámica molecular para una molécula de agua (H2O) usando el método de Verlet con disipación.
+# En este ejemplo, modelamos la molécula de agua como un sistema de tres partículas (oxígeno e hidrógenos) conectadas por resortes que representan los enlaces O-H.
+# La disipación se introduce mediante un término de fricción proporcional a la velocidad, lo que permite observar la relajación de las posiciones y velocidades hacia un estado de equilibrio.
+# El código simula la evolución temporal de las posiciones y velocidades de los átomos, y luego grafica la evolución de la posición x en el tiempo, así como el estado de fase (posición vs velocidad) para cada átomo.
+# Nota: Este es un modelo simplificado y no incluye interacciones más complejas como ángulos de enlace o fuerzas de van der Waals, pero sirve para ilustrar el método de Verlet con disipación en un sistema molecular básico.
+# Requiere las bibliotecas numpy y matplotlib para la simulación y visualización.
+# Autor: [Tu Nombre]
+# Fecha: [Fecha de creación]
+# Licencia: [Licencia, si aplica]
+# Importar bibliotecas necesarias
+# Asegúrate de tener numpy y matplotlib instalados en tu entorno de Python para ejecutar este código.
+# Puedes instalar estas bibliotecas usando pip si no las tienes:
+# pip install numpy matplotlib
+# Este código simula la dinámica de una molécula de agua utilizando el método de Verlet con disipación, modelando los enlaces O-H como resortes y agregando un término de fricción para observar la relajación hacia el equilibrio.
+# El resultado incluye gráficos de la evolución de la posición x en el tiempo para cada átomo, así como un estado de fase que muestra la relación entre posición y velocidad en la coordenada x.
 import numpy as np
 import matplotlib.pyplot as plt
 

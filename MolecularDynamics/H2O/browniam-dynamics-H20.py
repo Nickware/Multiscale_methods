@@ -1,3 +1,16 @@
+# Simulación de dinámica browniana para una molécula de agua (H2O)
+# En esta simulación, modelamos la molécula de agua como un sistema de tres partículas (oxígeno y dos hidrógenos) conectadas por resortes que representan los enlaces O-H. La dinámica se simula utilizando un enfoque de Langevin overdamped, que incluye tanto las fuerzas de resorte como el ruido térmico.
+# El código a continuación realiza la simulación y grafica la evolución de la posición x de cada átomo a lo largo del tiempo.
+# Nota: Este código es una simplificación y no incluye todas las interacciones presentes en una molécula de agua real, como las interacciones de ángulo o las fuerzas de van der Waals. Sin embargo, proporciona una base para entender la dinámica browniana en un sistema molecular simple.
+# Requisitos:
+# - Python 3.x
+# - NumPy
+# - Matplotlib
+# Para ejecutar el código, asegúrate de tener las bibliotecas necesarias instaladas. Puedes instalar NumPy y Matplotlib usando pip:
+# pip install numpy matplotlib
+# Al ejecutar el código, se generará una gráfica que muestra la evolución de la posición x de cada átomo (oxígeno y dos hidrógenos) a lo largo del tiempo, lo que permite visualizar cómo se mueve cada átomo bajo la influencia de las fuerzas de resorte y el ruido térmico.
+# Importar bibliotecas necesarias
+# Este código simula la dinámica browniana de una molécula de agua (H2O) utilizando un modelo simplificado de resortes para representar los enlaces O-H. La simulación se realiza utilizando un enfoque de Langevin overdamped, que incluye tanto las fuerzas de resorte como el ruido térmico. Al final, se grafica la evolución de la posición x de cada átomo a lo largo del tiempo.
 import numpy as np
 import matplotlib.pyplot as plt
 
