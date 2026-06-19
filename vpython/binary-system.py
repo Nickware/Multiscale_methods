@@ -1,3 +1,18 @@
+# Simulación de un sistema binario con VPython
+# En este ejemplo se simula un sistema binario con dos objetos que se atraen mutuamente por la fuerza gravitacional.
+# El objeto "giant" es más masivo que el objeto "dwarf", por lo que ambos objetos orbitan alrededor de un centro de masa común.
+# Para ejecutar este código, asegúrate de tener VPython instalado y ejecuta el script en un entorno compatible con VPython (como Jupyter Notebook o un entorno de desarrollo que soporte VPython).
+# Nota: Este código es una simplificación de un sistema binario real y no tiene en cuenta factores como la relatividad, la resistencia del aire, o la interacción con otros objetos en el espacio. Es solo una simulación básica para ilustrar los conceptos de la gravedad y el movimiento orbital.
+# Para mejorar la simulación, puedes ajustar los parámetros como las masas, las posiciones iniciales, y las velocidades de los objetos. También puedes agregar más objetos al sistema para simular un sistema solar completo o una galaxia. ¡Diviértete experimentando con la simulación!
+# Importamos la biblioteca VPython para crear la simulación visual
+# VPython es una biblioteca de Python que permite crear gráficos 3D interactivos de manera sencilla, ideal para simular fenómenos físicos como el movimiento de objetos bajo la influencia de fuerzas.
+# En este caso, utilizaremos VPython para simular un sistema binario, donde dos objetos se atraen mutuamente por la fuerza gravitacional. La simulación mostrará cómo ambos objetos orbitan alrededor de un centro de masa común debido a esta atracción.
+# Asegúrate de tener VPython instalado en tu entorno de Python para ejecutar este código. Puedes instalarlo usando pip:
+# pip install vpython
+# Una vez que tengas VPython instalado, puedes ejecutar este código en un entorno compatible, como Jupyter Notebook o cualquier entorno de desarrollo que soporte VPython. Al ejecutar el código, verás una representación visual de dos esferas (representando los objetos del sistema binario) orbitando alrededor de un punto común debido a la fuerza gravitacional entre ellas. Puedes ajustar los parámetros como las masas, las posiciones iniciales y las velocidades para observar diferentes comportamientos en la simulación. ¡Disfruta explorando el fascinante mundo de la física con VPython!
+# El código simula un sistema binario con dos objetos que se atraen mutuamente por la fuerza gravitacional. El objeto "giant" es más masivo que el objeto "dwarf", por lo que ambos objetos orbitan alrededor de un centro de masa común. La simulación muestra cómo ambos objetos se mueven bajo la influencia de la gravedad, y puedes ajustar los parámetros para observar diferentes comportamientos en la simulación.
+# Para mejorar la simulación, puedes agregar más objetos al sistema para simular un sistema solar completo o una galaxia, o incluso incluir efectos relativistas para una simulación más precisa. ¡Diviértete experimentando con la simulación y explorando los conceptos de la física con VPython!
+# Simulación de un sistema binario con VPython
 from vpython import *
 
 scene.caption = ""
