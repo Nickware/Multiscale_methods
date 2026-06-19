@@ -1,3 +1,30 @@
+# Simulación de dinámica molecular para una molécula de metano (CH4) usando el método de Verlet
+# Este código simula la vibración de los enlaces C-H en el metano, mostrando la evolución de las posiciones, energías y distancias a lo largo del tiempo.
+# Parámetros físicos, configuración inicial, cálculo de fuerzas, integración de las ecuaciones de movimiento y visualización se incluyen en el código.
+# Al final de la simulación, se analizan las distancias y ángulos para evaluar la estabilidad de la molécula y su conformación final.
+
+# Nota: Este código es para fines educativos y no incluye efectos cuánticos ni interacciones más complejas como fuerzas de Van der Waals o enlaces múltiples.
+# Requiere las bibliotecas numpy, matplotlib y IPython para su ejecución. Asegúrate de tenerlas instaladas antes de correr el código.
+# Para ejecutar este código, simplemente cópialo en un entorno de Python (como Jupyter Notebook) y ejecútalo. Verás la evolución de la molécula de metano en tiempo real, junto con gráficos de las distancias C-H y las energías potencial, cinética y total.
+# Al finalizar la simulación, se imprimirán las distancias finales entre el carbono y los hidrógenos, los ángulos H-C-H y una medida de la desviación del tetraedro ideal.
+# ¡Disfruta explorando la dinámica molecular del metano!
+# Nota: Este código es una simplificación y no representa completamente la complejidad de las interacciones moleculares reales. Para simulaciones más precisas, se podrían incluir términos adicionales en el potencial, como fuerzas de Van der Waals, enlaces múltiples, o efectos cuánticos. Sin embargo, este ejemplo proporciona una base sólida para entender los conceptos fundamentales de la dinámica molecular y la simulación de sistemas moleculares simples.
+# Además, ten en cuenta que la elección de los parámetros (como la constante de enlace y el paso de tiempo) puede afectar la estabilidad y precisión de la simulación. Experimenta con diferentes valores para ver cómo afectan el comportamiento de la molécula.
+
+
+# Si estás utilizando otro entorno, asegúrate de instalar las bibliotecas adecuadas para tu configuración.
+# Este código es una simulación básica de la dinámica molecular de una molécula de metano (CH4) utilizando el método de Verlet para integrar las ecuaciones de movimiento. La simulación incluye un potencial armónico para los enlaces C-H, un término de amortiguamiento viscoso para evitar oscilaciones excesivas, y visualizaciones en tiempo real de la evolución de la molécula, las distancias C-H y las energías potencial, cinética y total.
+# Al final de la simulación, se analizan las distancias y ángulos para evaluar la estabilidad de la molécula y su conformación final. Este código es ideal para fines educativos y para entender los conceptos básicos de la dinámica molecular. Para simulaciones más avanzadas, se podrían incluir términos adicionales en el potencial, como fuerzas de Van der Waals, enlaces múltiples, o efectos cuánticos.
+# ¡Disfruta explorando la dinámica molecular del metano y aprendiendo sobre los fundamentos de la simulación de sistemas moleculares!
+# Recuerda que la simulación es una herramienta poderosa para entender el comportamiento de las moléculas, pero siempre es importante interpretar los resultados con cuidado y considerar las limitaciones del modelo utilizado. En este caso, el modelo es una simplificación que no incluye todas las interacciones posibles, pero proporciona una base sólida para aprender sobre la dinámica molecular y la simulación de sistemas moleculares simples.
+# ¡Buena suerte y diviértete aprendiendo sobre dinámica molecular!
+ 
+
+# Importación de bibliotecas necesarias para la simulación y visualización
+# numpy para cálculos numéricos, matplotlib para gráficos, mpl_toolkits para gráficos 3D, IPython.display para limpiar la salida en cada paso y time para medir el tiempo de ejecución.
+# Asegúrate de tener estas bibliotecas instaladas en tu entorno de Python para ejecutar el código correctamente.
+# Si estás utilizando un entorno como Jupyter Notebook, puedes instalar las bibliotecas necesarias usando pip:
+# !pip install numpy matplotlib ipython 
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
