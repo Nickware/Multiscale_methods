@@ -1,3 +1,37 @@
+# Vpython 
+
+Es una extensión de Python pensada para crear **visualizaciones 3D sencillas e interactivas** con muy poco código. Se usa mucho en enseñanza de física y programación porque permite construir esferas, flechas, vectores y trayectorias en tiempo real sin pelear tanto con gráficos de bajo nivel. [en.wikipedia](https://en.wikipedia.org/wiki/VPython)
+
+## Qué lo hace útil
+
+- Permite representar objetos 3D de forma natural, como `sphere`, `box`, `arrow` y vectores.
+- Es muy práctico para simulaciones educativas, por ejemplo movimiento de proyectiles, osciladores, órbitas y choques.
+- Ayuda a concentrarse en la física y no tanto en la interfaz gráfica. [wiki.python](https://wiki.python.org/moin/VPython)
+
+## En qué se usa
+
+VPython se ha usado sobre todo en educación, especialmente para enseñar física y programación científica. También aparece en contextos de visualización de datos o sistemas 3D más simples, aunque no compite con motores gráficos o herramientas CFD avanzadas. [en.wikipedia](https://en.wikipedia.org/wiki/VPython)
+
+## Cómo se ve su enfoque
+
+La idea típica es algo como:
+
+- definir objetos en 3D,
+- asignarles masa, velocidad o momento,
+- calcular fuerzas,
+- actualizar posiciones en un bucle,
+- ver la animación mientras corre el programa.
+
+Eso lo vuelve ideal para ejemplos como el script que me mostraste de gravitación entre dos cuerpos. [villate](https://villate.org/python/vpython.html)
+
+## Limitaciones
+
+VPython es excelente para didáctica y prototipos, pero no está pensado para simulaciones físicas de alta precisión ni para gráficos complejos de producción. Su fuerte es la **claridad conceptual** y la visualización rápida. [villate](https://villate.org/python/vpython.html)
+
+## Ejemplo de uso
+
+Si se quiere estudiar una órbita, se pueden representar dos esferas, calcular la fuerza gravitacional entre ellas y moverlas paso a paso. Eso convierte una ecuación abstracta en una animación fácil de interpretar. [wiki.python](https://wiki.python.org/moin/VPython)
+
 ## Simulación de Interacción Gravitacional entre Dos Cuerpos con VPython
 
 Este script utiliza la librería **VPython** para simular y visualizar la interacción gravitacional entre dos cuerpos masivos en el espacio, mostrando sus trayectorias en 3D en tiempo real.
