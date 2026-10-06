@@ -12,4 +12,4 @@ Cada actividad está disponible en dos versiones:
 3. `basics/Actividad_3_Campo_de_Fuerza.ipynb`: suma de términos de un campo de fuerza y relajación de una geometría.
 4. `basics/Actividad_5_Dinamica_Molecular_Verlet.ipynb`: integración de las fuerzas en el tiempo y auditoría de energía.
 
-Para consultar las soluciones, abre el archivo correspondiente terminado en `_resuelto.ipynb`. La actividad 4 que se menciona en algunos cierres corresponde a material externo a esta carpeta.
+Para consultar las soluciones, seleccionar el archivo correspondiente terminado en `_resuelto.ipynb`. La actividad 4 mencionada en algunos cierres corresponde a material externo a esta carpeta.
